@@ -1,0 +1,326 @@
+body
+{
+    font-family: 'TT Lakes';
+    margin: 0;
+    background-color: #f8f8f8;
+    /* max-height: 1810px; */
+}
+
+header
+{
+    /* size */
+    height: 88px;
+    min-width: 288px;
+    padding: 0 16px;
+    /* etc */
+    background-color: white;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.header-navigation
+{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header-navigation__left-container
+{
+    /* flex */
+    display: inherit;
+    align-items: center;
+    justify-content: space-between;
+    /* size */
+    width: 170px;
+}
+
+.header-navigation__left-container svg:first-of-type
+{
+    display:none;
+}
+
+.header-navigation a:not(.header-navigation__logo)
+{
+    width:40px;
+    height:40px;
+}
+
+.header-navigation__burger
+{
+    background: url('/img/header/burger.svg');
+}
+
+.header-navigation__logo
+{
+    width: 98px;
+    height: 52px;
+    background: url('/img/header/logo.svg');
+}
+
+.header-navigation__right-container
+{
+    display: inherit;
+    align-items: center;
+    justify-content: space-between;
+    width:98px;
+}
+
+.header-navigation__right-container svg
+{
+    margin:0 4px
+}
+
+.header-navigation__right-container svg,
+.header-navigation__call,
+.header-navigation__chat,
+.header-navigation__profile
+{
+    display: none
+}
+
+
+.header-navigation__call
+{
+    background: url('/img/header/call.svg')
+}
+
+.header-navigation__chat
+{
+    background: url('/img/header/chat.svg')
+}
+
+.header-navigation__profile
+{
+    background: url('/img/header/profile.svg')
+}
+
+.header-navigation__repair
+{
+    background: url('/img/header/repair.svg')
+}
+
+.header-navigation__checkstatus
+{
+    background: url('/img/header/checkstatus.svg')
+}
+
+
+/*  */
+/* SERVICES SECTION */
+/*  */
+.services-section 
+{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.services-section__header,
+.services-section svg
+{
+    font-size: 28px;
+    font-weight:bold;
+    margin:24px 0 24px 0;
+}
+
+/* Slide menu */
+.services-section nav{
+    display: inherit;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    gap:5px;
+    /* max-height: 85px; */
+    max-width: 1120px;
+}
+
+.services-section nav::after{
+    content:'';
+    position:absolute;
+    right:0;
+    height:40px;
+    width:16px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248,248,248, 0.0001));
+}
+
+.services-section nav::before{
+    content:'';
+    position:absolute;
+    left:0;
+    height:40px;
+    width:16px;
+    background: linear-gradient(90deg, #F8F8F8 16.84%, rgba(248,248,248, 0.0001));
+}
+
+.services-section nav::-webkit-scrollbar 
+{display: none;}
+
+.services-section nav button {
+    width: fit-content;
+    height: 40px; 
+    flex-shrink: 0;
+    padding:8px 0.6em 8px 1em;
+
+    font-family: inherit;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color:#7E7E82;
+    border: none;
+    background:inherit;    
+
+    white-space: nowrap;
+}
+
+.services-section nav button:first-child
+{margin-left:16px;}
+
+.services-section nav button:hover
+{
+    background: white;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    padding: 6px calc(0.6em - 2px) 6px calc(1em - 2px);
+}
+
+.services-section nav button:nth-child(2)
+{display:none;}
+
+.services-section nav button:last-child
+{margin-right: 16px;}
+/*  */
+
+
+.services-section__container
+{
+    display: inherit; /*flex-con*/
+    flex-basis: content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 24px;
+}
+
+.services-section__container div 
+{
+    display: inherit; 
+    flex-direction: column;
+    margin: 0 16px;
+}
+
+.services-section__container div p
+{
+    min-width: 288px;
+    max-width: 312px;
+    min-height: 90px;
+    /* font */
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.services-section__container p:nth-child(2)
+{
+    display: none;
+    margin-top: 10px;
+    min-height: auto;
+}
+
+.services-section__container button{
+    width:fit-content;
+    height:24px;
+    border:none;
+
+    background-color: inherit;
+    /* font */
+    font-family: inherit;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.services-section__container button::before{
+    content:url("/img/mainSection/icon.svg");
+    margin:2px 16px 2px 8px;
+}
+
+.services-section img {
+    width:320px;
+    height:176px;    
+}
+
+@media screen and (min-width:768px) and (max-width:1119px)
+{
+    header 
+    {
+        padding: 0 24px
+    }
+
+    .header-navigation__left-container svg:first-of-type 
+    {
+        display:unset
+    }
+    .header-navigation__left-container svg:last-of-type  
+    {
+        display:none
+    }
+
+    .header-navigation__right-container 
+    {
+        width:fit-content;
+        gap:16px;
+    }
+    
+
+    .services-section nav button:first-child 
+    {margin-left:24px;}
+
+    .services-section nav button:nth-child(5)
+    {display: none;}
+
+    .services-section__container 
+    {
+        margin-left: 24px;
+        margin-right: 25px;
+        justify-content: space-between;
+    }
+    .services-section__container div p {margin-left: 0;}
+    .services-section__container p:nth-child(2) 
+    {
+        display:unset;
+        margin-bottom: 10px;
+    }
+    .services-section__container div button::before
+    {
+        margin:auto 16px auto 9px;
+    }
+    .services-section__container img 
+    {
+        width: 360px; 
+        height: 208px;
+        border:#f8f8f8 solid 1px;
+        border-radius: 7%;
+    }
+}
+
+
+
+@media screen and (min-width:1120px){
+    header {display:none;}
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-Regular.ttf) format("truetype");
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-Bold.ttf) format("truetype");
+    font-weight:bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-Thin.ttf) format("truetype");
+    font-weight:300;
+    font-style: italic;
+}

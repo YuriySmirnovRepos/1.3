@@ -12,55 +12,66 @@
         <header class="header">
             <nav class="header-navigation">
                 <div class="header-container header-navigation__left-container ">    
-                    <a class="icon icon__burger" href=""></a>
+                    <a class="header-container__icon-burger" href=""></a>
                     <svg class="delimeter delimeter_hidden_true" width="2" height="32">
                         <rect y="1" width="2px" height="32px" fill="#EAEAEA" ry="1">
                     </svg>
-                    <a class="icon__logo" href=""></a>
+                    <a class="header-container__icon-logo" href=""></a>
                     <svg class="delimeter" width="2" height="32">
                         <rect y="1" width="2px" height="32px" fill="#EAEAEA" ry="1">
                     </svg>
                 </div>
                 <div class="header-container header-navigation__right-container">
-                    <a class="icon icon__call icon_hidden_true" href=""></a>
-                    <a class="icon icon__chat icon_hidden_true" href=""></a>
-                    <a class="icon icon__profile icon_hidden_true" href=""></a>
+                    <a class="header-container__icon-call icon_hidden_true" href=""></a>
+                    <a class="header-container__icon-chat icon_hidden_true" href=""></a>
+                    <a class="header-container__icon-profile icon_hidden_true" href=""></a>
                     <svg class="delimeter delimeter_hidden_true" width="2" height="32">
                         <rect y="1" width="2px" height="32px" fill="#EAEAEA" ry="1">
                     </svg>
-                    <a class="icon icon__repair" href=""></a>
-                    <a class="icon icon__checkstatus" href=""></a>
+                    <a class="icon-repair" href=""></a>
+                    <a class="icon-checkstatus" href=""></a>
                 </div>
             </nav>
         </header>
         
         <main class="main">
             <section class="main-section">
-                <h1 class="main-section__header">
-                    Услуги и сервисы
-                </h1>
+                <div class="main-section__container-header">
+                    <h1 class="main-section__h1">
+                        Услуги и сервисы
+                    </h1>
+                    <div class="main-section__container-repair-1120 container_hidden_true">                        
+                        <a class="icon-repair_with-text-1120" href="">Оставить заявку</a>
+                    </div>
+                    <div class="main-section__container-checkstatus-1120 container_hidden_true">
+                        <a class="icon-checkstatus_with-text-1120" href="">Статус ремонта</a>
+                    </div>                    
+                </div>
 
-                <nav class="main-section__navigation">
+                <div class="main-section__navigation">
                     <button class="main-section__nav-button">Ремонтируемые устройства</button>
-                    <button class="main-section__nav-button">Ремонтируемые бренды</button>
+                    <button class="main-section__nav-button main-section__nav-button_hidden_true">Ремонтируемые бренды</button>
                     <button class="main-section__nav-button">Дополнительные услуги</button>
                     <button class="main-section__nav-button">Цены на услуги</button>
                     <button class="main-section__nav-button">Адреса сервисных центров</button>
                     <button class="main-section__nav-button">Специальные цены</button>
                     <button class="main-section__nav-button">Отзывы</button>
-                </nav>
+                </div>
 
-                <div class="main-section__description">
-                    <div>
-                        <p>
-                            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                <div class="main-section__content-outer">
+                    <div class="main-section__content">
+                        <p class="main-section__text">
+                            Мы являемся авторизованным сервисным центром по 
+                            ремонту техники Dell. Только у нас вы можете отремонтировать 
+                            свой ноутбук Dell с официальной гарантией производителя.
                         </p>
-                        <p>
-                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                        <p class="main-section__text main-section__text_hidden_true">
+                            Мы успешно работаем с 1992 года и заслужили 
+                            репутацию надежного партнера.
                         </p>
-                        <button class="read-more">Читать далее</button>
+                        <button class="main-section__btn-read-more">Читать далее</button>
                     </div>
-                    <img src="/img/mainSection/bigPicture.svg" alt="CPS logo photo">
+                    <img class="main-section__logo-picture" src="/img/mainSection/bigPicture.svg" alt="CPS logo photo">
                 </div>
                 
             </section>

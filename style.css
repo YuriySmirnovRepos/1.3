@@ -86,6 +86,8 @@ a
 
 .header-container__icon-chat
 {
+    width: 40px;
+    height: 40px;
     background: url('/img/header/chat.svg')
 }
 
@@ -124,7 +126,6 @@ a
 
 .main-section__container-header
 {
-    /* border: 1px solid black; */
     display: flex;
     align-items: center;
     margin-right:32px;
@@ -134,10 +135,10 @@ a
 .main-section__h1
 {
     font-size: 28px;
-    font-weight:bold;
     padding-left: 16px;
-    margin-top: 25px;
+    margin:25px 0;
     letter-spacing: -0.6px;
+    white-space: nowrap;
 }
 
 .main-section__h1::before
@@ -192,8 +193,8 @@ a
     display: inherit;
     flex-wrap: nowrap;
     overflow: scroll;
-    gap:5px;
     max-width: 1120px;
+    padding-left: 16px;
 }
 
 .main-section__navigation::after,
@@ -225,16 +226,10 @@ a
     padding: 8px 0.6em;
     font-family: inherit;
     font-size: 16px;
-    /* letter-spacing: 0.2px; */
+    letter-spacing: 0.2px;
     color: #7e7e7e;
     background: inherit;
 }
-
-.main-section__nav-button:first-child
-{
-    margin-left: 16px;
-}
-
 
 .main-section__nav-button:hover
 {
@@ -255,10 +250,9 @@ a
 .main-section__content-outer
 {
     display: flex;
-    flex-basis: content;
     flex-direction: row;
     flex-wrap: wrap;
-    /* padding-top: 24px; */
+    padding-top: 24px;
 }
 
 .main-section__content
@@ -270,11 +264,13 @@ a
 {
     min-width: 288px;
     max-width: 312px;
-    min-height: 90px;
+    /* min-height: 90px; */
     /* font */
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
+    margin:0;
+    margin-bottom:17px;
 }
 
 .main-section__btn-read-more
@@ -286,7 +282,7 @@ a
     /* font */
     font-family: inherit;
     font-size: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     padding: 0;
 }
 
@@ -312,6 +308,11 @@ a
         padding: 0 24px
     }
 
+    .header-navigation__left-container
+    {
+        width:180px;
+    }
+
     .header-navigation__left-container .delimeter:first-of-type 
     {
         display:unset
@@ -331,50 +332,66 @@ a
     }
 
     .header-navigation__right-container .delimeter,
-    .icon__call,
-    .icon__chat,
-    .icon__profile,
-    .icon__checkstatus
+    .header-container__icon-call,
+    .header-container__icon-chat,
+    .header-container__icon-profile,
+    .header-container__icon-checkstatus
     {
         display: unset;
     }
 
-
-    .main-section nav button:first-child 
-    {margin-left:24px;}
-
-    .main-section nav button:nth-child(5)
-    {display: none;}
-
-    .main-section__container 
+    .main-section__h1
     {
-        margin-left: 24px;
-        margin-right: 25px;
+        padding-left: 23px;
+        margin-bottom:32px;
+    }
+
+    .main-section__navigation
+    {
+        padding-left:24px;
+    }
+
+    .main-section__content-outer
+    {
+        padding-top:32px;
+        gap:46px;
+        margin: 0 25px 0 24px;
         justify-content: space-between;
     }
-    .main-section__container div p {margin-left: 0;}
-    .main-section__container p:nth-child(2) 
+
+    .main-section__content
     {
-        display:unset;
-        margin-bottom: 10px;
+        margin:0;
     }
-    .main-section__container div button::before
+
+    .main-section__text
     {
-        margin:auto 16px auto 9px;
+        line-height: 20px;
+        margin-bottom:21px;
     }
-    .main-section__container img 
+
+    .main-section__text:last-of-type
     {
-        width: 360px; 
-        height: 208px;
-        border:#f8f8f8 solid 1px;
-        border-radius: 7%;
+        display: block;
+        margin-bottom: 11px;
     }
+
+    .main-section__logo-picture
+    {
+        width: 360px;
+        height: 200px;
+        border-radius: 6px;
+    }    
 }
 
 
 
-@media screen and (min-width:1120px){
-    header {display:none;}
+@media screen and (min-width:1120px)
+{
+    header 
+    {
+        display:none
+    }
 }
 
 @font-face {

@@ -148,7 +148,7 @@ a
     left:0px;
     width: 4px;
     height: 40px;
-    background: url('/img/mainSection/highlight.svg');
+    background: url('./img/mainSection/highlight.svg');
 }
 
 .main-section__container-repair-1120
@@ -171,7 +171,7 @@ a
 
 .icon-repair_with-text-1120::after
 {
-    background: url('/img/header/repair.svg');
+    background: url('./img/header/repair.svg');
 }
 
 .main-section__container-checkstatus-1120
@@ -183,7 +183,7 @@ a
 
 .icon-checkstatus_with-text-1120::after
 {
-    background: url('/img/header/checkstatus.svg')
+    background: url('./img/header/checkstatus.svg')
 }
 
 
@@ -287,7 +287,7 @@ a
 
 .main-section__btn-read-more::before
 {
-    content:url("/img/mainSection/icon.svg");
+    content:url("./img/mainSection/icon.svg");
     display: inline-block;
     width:24px;
     height: 24px;

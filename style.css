@@ -57,14 +57,14 @@ a
 {
     width:40px;
     height:40px;
-    background: url('./img/header/burger.svg');
+    background: url('img/header/burger.svg');
 }
 
 .header-container__icon-logo
 {
     width: 98px;
     height: 52px;
-    background: url('./img/header/logo.svg');
+    background: url('img/header/logo.svg');
 }
 
 .header-navigation__right-container
@@ -81,35 +81,35 @@ a
 {
     width:40px;
     height:40px;
-    background: url('./img/header/call.svg')
+    background: url('img/header/call.svg')
 }
 
 .header-container__icon-chat
 {
     width: 40px;
     height: 40px;
-    background: url('./img/header/chat.svg')
+    background: url('img/header/chat.svg')
 }
 
 .header-container__icon-profile
 {
     width:40px;
     height:40px;
-    background: url('./img/header/profile.svg')
+    background: url('img/header/profile.svg')
 }
 
 .icon-repair
 {
     width:40px;
     height:40px;
-    background: url('./img/header/repair.svg')
+    background: url('img/header/repair.svg')
 }
 
 .icon-checkstatus
 {
     width:40px;
     height:40px;
-    background: url('./img/header/checkstatus.svg')
+    background: url('img/header/checkstatus.svg')
 }
 
 
@@ -148,7 +148,7 @@ a
     left:0px;
     width: 4px;
     height: 40px;
-    background: url('./img/mainSection/highlight.svg');
+    background: url('img/mainSection/highlight.svg');
 }
 
 .main-section__container-repair-1120
@@ -171,7 +171,7 @@ a
 
 .icon-repair_with-text-1120::after
 {
-    background: url('./img/header/repair.svg');
+    background: url('img/header/repair.svg');
 }
 
 .main-section__container-checkstatus-1120
@@ -183,7 +183,7 @@ a
 
 .icon-checkstatus_with-text-1120::after
 {
-    background: url('./img/header/checkstatus.svg')
+    background: url('img/header/checkstatus.svg')
 }
 
 
@@ -287,7 +287,7 @@ a
 
 .main-section__btn-read-more::before
 {
-    content:url("./img/mainSection/icon.svg");
+    content:url("img/mainSection/icon.svg");
     display: inline-block;
     width:24px;
     height: 24px;
@@ -464,7 +464,7 @@ a
 @font-face 
 {
     font-family: 'TT Lakes';
-    src: url(./fonts/TTLakes-Regular.ttf) format("truetype");
+    src: url(fonts/TTLakes-Regular.ttf) format("truetype");
     font-weight:normal;
     font-style: normal;
 }
@@ -472,7 +472,7 @@ a
 @font-face 
 {
     font-family: 'TT Lakes';
-    src: url(./fonts/TTLakes-Bold.ttf) format("truetype");
+    src: url(fonts/TTLakes-Bold.ttf) format("truetype");
     font-weight:bold;
     font-style: normal;
 }
@@ -480,7 +480,7 @@ a
 @font-face 
 {
     font-family: 'TT Lakes';
-    src: url(./fonts/TTLakes-Thin.ttf) format("truetype");
+    src: url(fonts/TTLakes-Thin.ttf) format("truetype");
     font-weight:300;
     font-style: italic;
 }

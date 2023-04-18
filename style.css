@@ -57,14 +57,14 @@ a
 {
     width:40px;
     height:40px;
-    background: url('/img/header/burger.svg');
+    background: url('./img/header/burger.svg');
 }
 
 .header-container__icon-logo
 {
     width: 98px;
     height: 52px;
-    background: url('/img/header/logo.svg');
+    background: url('./img/header/logo.svg');
 }
 
 .header-navigation__right-container
@@ -81,35 +81,35 @@ a
 {
     width:40px;
     height:40px;
-    background: url('/img/header/call.svg')
+    background: url('./img/header/call.svg')
 }
 
 .header-container__icon-chat
 {
     width: 40px;
     height: 40px;
-    background: url('/img/header/chat.svg')
+    background: url('./img/header/chat.svg')
 }
 
 .header-container__icon-profile
 {
     width:40px;
     height:40px;
-    background: url('/img/header/profile.svg')
+    background: url('./img/header/profile.svg')
 }
 
 .icon-repair
 {
     width:40px;
     height:40px;
-    background: url('/img/header/repair.svg')
+    background: url('./img/header/repair.svg')
 }
 
 .icon-checkstatus
 {
     width:40px;
     height:40px;
-    background: url('/img/header/checkstatus.svg')
+    background: url('./img/header/checkstatus.svg')
 }
 
 

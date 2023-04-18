@@ -169,7 +169,7 @@ a
     height:40px
 }
 
-.icon-repair_with-text_1120::after
+.icon-repair_with-text-1120::after
 {
     background: url('/img/header/repair.svg');
 }
@@ -263,8 +263,7 @@ a
 .main-section__text
 {
     min-width: 288px;
-    max-width: 312px;
-    /* min-height: 90px; */
+    width:288px;
     /* font */
     font-size: 14px;
     line-height: 18px;
@@ -366,6 +365,7 @@ a
 
     .main-section__text
     {
+        width: 312px;
         line-height: 20px;
         margin-bottom:21px;
     }
@@ -388,25 +388,97 @@ a
 
 @media screen and (min-width:1120px)
 {
-    header 
+    .header 
     {
         display:none
     }
+
+
+    .main-section__container-repair-1120,
+    .main-section__container-checkstatus-1120
+    {
+        display: unset;
+    }
+
+    .main-section__container-header
+    {
+        margin-top: 42px;
+        margin-bottom:10px;
+        margin-right: 44px;
+    }
+
+    .main-section__h1
+    {
+        padding-left:33px;
+        margin-top:0;
+        margin-bottom:0;
+    }
+
+    .main-section__navigation
+    {
+        padding-left:34px;
+        flex-wrap: wrap;
+        align-items: center;
+        gap:8px 0px;
+    }
+
+    .main-section__content-outer
+    {
+        padding-top:0;
+    }
+
+    .main-section__content
+    {
+        margin-top: 11px;
+        margin-left:34px;
+        margin-right:36px;
+        width:490px;
+    }
+
+    .main-section__text
+    {
+        width: 490px;
+        display: block;
+        line-height: 20px;
+    }
+
+    .main-section__text-part-1120
+    {
+        display: unset;
+    }
+
+    .main-section__text-part-1120::before
+    {
+        content:','
+    }
+
+    .main-section__logo-picture
+    {
+        width: 531px;
+        height: 302px;
+        border-radius: 6px;
+    }
+
 }
 
-@font-face {
+@font-face 
+{
     font-family: 'TT Lakes';
     src: url(./fonts/TTLakes-Regular.ttf) format("truetype");
     font-weight:normal;
     font-style: normal;
 }
-@font-face {
+
+@font-face 
+{
     font-family: 'TT Lakes';
     src: url(./fonts/TTLakes-Bold.ttf) format("truetype");
     font-weight:bold;
     font-style: normal;
 }
-@font-face {
+
+@font-face 
+{
     font-family: 'TT Lakes';
     src: url(./fonts/TTLakes-Thin.ttf) format("truetype");
     font-weight:300;

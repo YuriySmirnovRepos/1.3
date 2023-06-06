@@ -4,6 +4,11 @@ a
     color:black;
 }
 
+.hidden
+{
+    display:none;
+}
+
 .body
 {
     font-family: 'TT Lakes';
@@ -13,102 +18,86 @@ a
 
 .header
 {
-    box-sizing: border-box;
-    height: 88px;
-    min-width: 288px;
-    padding: 0 16px;
-    
+    height: 87px;
+    min-width: 320px;
     background-color: white;
     border-bottom: 1px solid #D9FFF5;
 }
 
-.header-navigation
+.header__container
 {
     display: flex;
     justify-content: space-between;
-    height: 100%;
-}
-
-.header-container
-{
-    display: inherit;
     align-items: center;
-    justify-content: space-between;
+    height: 100%;
+    padding:0 8px;
 }
 
-.header-navigation__left-container
+.header__link
 {
-    width: 172px;
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
 }
 
-
-
-.delimeter_hidden_true,
-.icon_hidden_true,
-.container_hidden_true,
-.main-section__nav-button_hidden_true,
-.main-section__text_hidden_true
+.header__btn-menu
 {
-    display:none;
-}
-
-
-.header-container__icon-burger
-{
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    border:none;
     background: url('img/header/burger.svg');
 }
 
-.header-container__icon-logo
+.header__btn-menu:hover
+{
+    cursor: pointer;
+}
+
+.header__link--logo
 {
     width: 98px;
     height: 52px;
     background: url('img/header/logo.svg');
+    margin:0 auto 0 8.73px;
 }
 
-.header-navigation__right-container
+.header__link--logo::after
 {
-    width:96px;
+    content: '';
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    left:calc(100% + 17px);
+    top:20%;
+    height: 32px;
+    width: 2px;
+    background-color: #eaeaea;
+    border-radius: 2px;
 }
 
-.header-navigation__right-container .delimeter
+.header__link--call
 {
-    margin:0 4px
-}
-
-.header-container__icon-call
-{
-    width:40px;
-    height:40px;
     background: url('img/header/call.svg')
 }
 
-.header-container__icon-chat
+.header__link--chat
 {
-    width: 40px;
-    height: 40px;
     background: url('img/header/chat.svg')
 }
 
-.header-container__icon-profile
+.header__link--profile
 {
-    width:40px;
-    height:40px;
     background: url('img/header/profile.svg')
 }
 
-.icon-repair
+.header__link--repair
 {
-    width:40px;
-    height:40px;
     background: url('img/header/repair.svg')
 }
 
-.icon-checkstatus
+.header__link--checkstatus
 {
-    width:40px;
-    height:40px;
     background: url('img/header/checkstatus.svg')
 }
 

@@ -1,3 +1,21 @@
+<!-- 
++    1. header должен быть класс по бэм  
+
++    2. header-left не используй позиции тк в этом нет смысла и 
+        это хрупкое решение тк если я задам order,то 
+        твой left не будет уже left
+
++    3. header-left назови header__container как и header-right
+
++    4. header-left__menu это кнопка header__button
+
+    5. ./img/divider.svg выпили все это делается через before/after
+
+    6. header-right назови header__actions и измени структуру. 
+        Это ul внутри 5 li и внутри каждого - button, в котором svg иконки
+
+    7. header-right__chat (модификатор неверный) это header__action--chat
+-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,28 +28,26 @@
     </head>
     <body class="body">
         <header class="header">
-            <nav class="header-navigation">
-                <div class="header-container header-navigation__left-container ">    
-                    <a class="header-container__icon-burger" href=""></a>
-                    <svg class="delimeter delimeter_hidden_true" width="2" height="32">
-                        <rect y="1" width="2px" height="32px" fill="#EAEAEA" ry="1">
-                    </svg>
-                    <a class="header-container__icon-logo" href=""></a>
-                    <svg class="delimeter" width="2" height="32">
-                        <rect y="1" width="2px" height="32px" fill="#EAEAEA" ry="1">
-                    </svg>
-                </div>
-                <div class="header-container header-navigation__right-container">
-                    <a class="header-container__icon-call icon_hidden_true" href=""></a>
-                    <a class="header-container__icon-chat icon_hidden_true" href=""></a>
-                    <a class="header-container__icon-profile icon_hidden_true" href=""></a>
-                    <svg class="delimeter delimeter_hidden_true" width="2" height="32">
-                        <rect y="1" width="2px" height="32px" fill="#EAEAEA" ry="1">
-                    </svg>
-                    <a class="icon-repair" href=""></a>
-                    <a class="icon-checkstatus" href=""></a>
-                </div>
-            </nav>
+            <!-- Тег а - если нужен переход на другую страницу. 
+            Тег button - если переход не нужен. Здесь нужен button -->
+            <div class="header__container">
+                <button class="header__btn-menu"></button>
+                <!-- <svg class="delimeter delimeter_hidden_true" width="2" height="32">
+                    <rect y="1" width="2px" height="32px" fill="#EAEAEA" ry="1">
+                </svg> -->
+                <a class="header__link header__link--logo" href=""></a>
+                <!-- <svg class="delimeter" width="2" height="32">
+                    <rect y="1" width="2px" height="32px" fill="#EAEAEA" ry="1">
+                </svg> -->
+                <a class="header__link header__link--call hidden" href=""></a>
+                <a class="header__link header__link--chat hidden" href=""></a>
+                <a class="header__link header__link--profile hidden" href=""></a>
+                <!-- <svg class="delimeter delimeter_hidden_true" width="2" height="32">
+                    <rect y="1" width="2px" height="32px" fill="#EAEAEA" ry="1">
+                </svg> -->
+                <a class="header__link header__link--repair" href=""></a>
+                <a class="header__link header__link--checkstatus" href=""></a>
+            </div>
         </header>
         
         <main class="main">
@@ -40,6 +56,12 @@
                     <h1 class="main-section__h1">
                         Услуги и сервисы
                     </h1>
+                    <!-- 
+                        8. .main-buttons выпили все флоаты и забудь и них
+                        Сделай через flex (скрин)
+
+                        9. main-buttons не по бэм это main__actions внутри 2 кнопки, а не ссылки
+                     -->
                     <div class="main-section__container-repair-1120 container_hidden_true">                        
                         <a class="icon-repair_with-text-1120" href="">Оставить заявку</a>
                     </div>
@@ -47,7 +69,9 @@
                         <a class="icon-checkstatus_with-text-1120" href="">Статус ремонта</a>
                     </div>                    
                 </div>
-
+                <!-- 
+                    10. main__nav внутри структура должна быть nav -> ul -> li -> a 
+                -->
                 <div class="main-section__navigation">
                     <button class="main-section__nav-button">Ремонтируемые устройства</button>
                     <button class="main-section__nav-button main-section__nav-button_hidden_true">Ремонтируемые бренды</button>
@@ -73,9 +97,12 @@
                                 обращаются по рекомендациям и, в свою очередь, 
                                 советуют нас родным и близким.</span>
                         </p>
+                        <!-- 
+                            11. read-more это кнопка 
+                        -->
                         <button class="main-section__btn-read-more">Читать далее</button>
                     </div>
-                    <img class="main-section__logo-picture" src="img/mainSection/bigPicture.svg" alt="CPS logo photo">
+                    <img class="main-section__logo-picture" src="img/mainSection/logoPicture.png" alt="CPS logo photo">
                 </div>
             </section>
 

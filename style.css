@@ -433,18 +433,17 @@
         flex-wrap: wrap;
     }
 
-    .main-section__container-header
-    {
-        margin-top: 42px;
-        margin-bottom:10px;
-        margin-right: 44px;
-    }
 
     .hero__title
     {
         padding-left:33px;
         margin-top:42px;
         margin-bottom: 8px;
+    }
+
+    .hero__about-container{
+        padding-left:35px;
+        padding-right:35px;
     }
 
     .hero__about {

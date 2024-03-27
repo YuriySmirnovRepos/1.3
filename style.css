@@ -186,7 +186,7 @@
     left:0px;
     width: 4px;
     height: 40px;
-    background: url('img/mainSection/highlight.svg');
+    background: url('img/heroSection/highlight.svg');
 }
 
 /** Slide menu */
@@ -281,7 +281,7 @@
 
 .hero__read-more::before
 {
-    content:url("img/mainSection/icon.svg");
+    content:url("img/heroSection/icon.svg");
     display: inline-block;
     width:24px;
     height: 24px;
